@@ -13,7 +13,7 @@ Installation:
 Usage:
 
 
-```$GOPATH/bin/go-scribe-client```
+```$GOPATH/bin/go-scribe-client --help```
 
 After startup, you can add messages in format "category::message" to batch:
 
@@ -28,12 +28,11 @@ Available commands:
 Example:
 
 ```
-jakon89$ ./scribe-client-go -addr localhost:9090
-Connected to localhost:9090 
-new_file_event::{"message":"new file created!"}
-LogEntry({Category:new_file_event Message:{"message":"new file created!"}}) added to batch 
-SEND
-1 messages sent 
-EXIT
-jakon89$ 
-```
+jakon89$ ./scribe-client-go -addr localhost:9090  
+Connected to localhost:9090  
+new_file_event::{"message":"new file created!"}  
+LogEntry({Category:new_file_event Message:{"message":"new file created!"}}) added to batch  
+SEND  
+1 messages sent  
+EXIT  
+jakon89$ ```
